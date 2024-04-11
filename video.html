@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .video-container {
+            width: 100%;
+            margin-right: 40px;
+        }
+        .video {
+            width: 100%;
+        }
+        .sidebar {
+            width: 35%;
+        }
+        .video-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .video-list-item {
+            margin-bottom: 10px;
+        }
+        .video-list-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        header{
+    background-color: gray;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+.dropdown{
+    position: right;
+
+    display: inline-block;
+    direction: rtl;
+}
+.dropdown-contents{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-contents a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-contents a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-contents{
+    display: block;
+
+}
+section{
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+footer{
+    text-align: center;
+            margin-top: 20px;
+}
+   .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+  <header>
+<nav>
+    <ul>
+        <li>
+            <img class="logo" src="log.JPG" alt="Logo" width="50" height="50">
+
+        </li>
+        <li>
+            <a href="home.html">home</a></li>
+            <li>
+            <a href="about.html">about</a></li>
+            <li>
+            <a href="contract.html">contract</a></li>
+            <li><a href="table.php">table</a></li>
+            <li><a href="registration.html">form</a></li>
+            <li><a href="list.html">list</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="video.html">video</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="dropdown">
+            <a href="#">settings</a>
+            <div class="dropdown-contents">
+                <a href="index.html">login</a>
+                <a href="logout.html">logout</a>
+                
+            </div>
+        </li>
+    </ul>
+</nav>
+
+</header>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h2>HOME Video</h2>
+            <video controls class="video">
+                <source src="video/selebura.mp4" type="video/mp4">
+            </video> <p> Please subscribe after wacthing this video</p>
+            <div class="buttons-container">
+                
+                <button class="button" id="like-button">Like</button>
+                
+                <button class="button" id="comment-button">Comment</button>
+                
+                <button class="button" id="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>Additional Videos</h2>
+            <video controls class="video">
+                <source src="video/itumba.mp4" type="video/mp4">
+                   
+            </video> <p> Please subscribe after wacthing this video</p>
+            <p><a href="https://www.youtube.com/watch?v=4mpqTVONxko"> Ninziza By Chryiso Ndasingwa</a></p><br>
+            <video controls class="video">
+                <source src="video/itumba.mp4" type="video/mp4">
+             </video> <p> Please subscribe after wacthing this video</p>
+             <p><a href="https://www.youtube.com/watch?v=84iG8KWV5kQ" target="_blank">Umwami nimwiza by james and daniella</a></p>
+            <video controls class="video">
+            <source src="video/selebura.mp4" type="video/mp4">
+             </video> <p> Please subscribe after wacthing this video</p><p><a href="https://www.youtube.com/watch?v=JzygZIoefWQ" target="_blank">Serebura by Bruce melody</a></p>
+
+        </div>
+    </div>
+        <script>
+        
+        document.getElementById('like-button').addEventListener('click', function() {
+
+            alert('Liked!');
+        });
+
+        document.getElementById('comment-button').addEventListener('click', function() {
+        
+            alert('Commented!');
+        });
+
+        document.getElementById('subscribe-button').addEventListener('click', function() {
+        
+            alert('Subscribed!');
+        });
+    </script>
+</body>
+    <footer>
+        <p>&copy;UR CBE BIT YEAR 2 @ GROUP seven(7)</p>
+    </footer>
+</html>
+
+<!-- disigned by rugemana christai 222004192 -->
