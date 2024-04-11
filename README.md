@@ -7,6 +7,6 @@ Nishimwe Aline 222010198
 Gisa Patrick 222008906
 Nzayisenga 222010587
 Hagenayezu Moise 222006319
-Benegusenga Mbabazi Fideltte 222003083
+Benegusenga Mbabazi FidelIte 222003083
 Umuhoza Josiane 222003244
 
